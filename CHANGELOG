@@ -1,0 +1,81 @@
+SpeakIt 0.4 <February 14 2000>
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Source code now included.
+- Cleaned up a bit so should be easier to follow the code.
+
+//---------------------------------------------
+
+SpeakIt 0.3 <July 24 1999>
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Redesigned the internal guts of the program, should be much more efficient now.
+- Switched to the new BGameSound class which seemed to fix the strange sound playback
+  in R4.5.
+- Because we made the above switch R4.5 will be needed to run this app, unless we receive
+  requests for a R4 version.
+- Removed the 100 character limit, now can change it from the settings menu.
+
+//---------------------------------------------
+
+SpeakIt 0.2 <May 30 1999>
+(First beta release) 
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Fixed problem with line feed character preventing last word in sentence from
+  being played when user presses enter at end.
+- Was including a lib that was not needed so the ram usage of the app went 
+  down by a megabyte or two.
+- Finally got around to including slightly better documentation. :) 
+
+//---------------------------------------------
+
+SpeakIt 0.1.7 Alpha <May 09 1999>
+(Last alpha release) 
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Window position now saved when program shuts down.
+- Anything that is not a number or letter is stripped away from text when 
+  spoken.
+
+//---------------------------------------------
+
+SpeakIt 0.1.6 Alpha <April 02 1999>
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Fixed a bug in the sound code that caused a memory leak. Thanks to Sean 
+  Heber for pointing this out.
+- Added the -h (or -H) command line option to hide the window when launching, 
+  very useful for playing startup sounds.
+  EXAMPLE:	SpeakIt -h "Welcome be dude" &
+
+* KNOWN PROBLEMS / LIMITATIONS *
+- Does not remember previous window positions.
+
+//---------------------------------------------
+
+SpeakIt 0.1.5 Alpha <March 25 1999>
+
+* FIXED IN THIS RELEASE / OR ADDED FEATURES *
+- Now remembers previous font size or color.
+- Can now play any sound file format supported by the BeOS and does not have
+  to use only 44.1 khz 8 / 16 bit stereo wave files. The draw back to this change
+  is you have to change any "sound.wav" files to "sound" (must be lower case).
+- You now have the ability to chose any font color with a color control panel.
+- Now supports multiple launches of the program.
+- You can now launch the app from a command line and pass it a string of text.
+  EXAMPLE:	SpeakIt "Welcome be dude" &
+- The cripple limit of letters is now set to 100 instead of 50.
+
+* KNOWN PROBLEMS / LIMITATIONS *
+- Does not remember previous window positions.
+
+//---------------------------------------------
+
+SpeakIt 0.1.4 Alpha <March 15 1999>
+
+* KNOWN PROBLEMS *
+- Does not remember previous font size or color.
+- Does not remember previous window positions.
+- Still is limited to 44.1 khz 8 / 16 bit stereo wav files.
+- Any wave files you add must be lowercase and have the .wav extension.
